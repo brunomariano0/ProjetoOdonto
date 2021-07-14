@@ -658,7 +658,7 @@ a:hover{
 	width:350px;
 	margin: 30px auto;
 	max-width: 100%;
-	background-color: #6d6e71;
+	
 }
 
 .login h1{
@@ -667,9 +667,15 @@ a:hover{
 }
 
 .card {
-    position: relative;
-    display: flex;
-    -ms-flex-direction: column;
+   position: relative;
+    display: flex;   
     flex-direction: column;    
 }
 
+.checkbox{
+	text-align: left;
+}
+
+.form-check-input{
+	width:150px;
+}
