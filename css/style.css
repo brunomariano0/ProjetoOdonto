@@ -584,7 +584,7 @@ a:hover{
 
 .Consultas h3{
 	color: white;
-	size: 12px;
+	font-size: 18px;
 	padding-top: 20px;
 	padding-left: 20px;
 }
@@ -602,6 +602,7 @@ a:hover{
 
 .Procedimentos h3{
 	color: white;
+	font-size: 18px;
 	padding-top: 20px;
 	padding-left: 20px;
 }
@@ -618,6 +619,7 @@ a:hover{
 
 .or h3{
 	color: white;
+	font-size: 18px;
 	padding-top: 20px;
 	padding-left: 20px;
 }
@@ -751,6 +753,13 @@ a:hover{
 .pricingTable:hover .value{
 	background:#06D6A0;
 }
+
+/*Inicio Página Beneficiario*/
+.login h1{
+	text-align: center;
+}
+
+
 @media only screen and (max-width: 990px){
 	.pricingTable{
 		margin-bottom: 35px;
