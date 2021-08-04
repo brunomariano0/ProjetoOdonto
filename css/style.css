@@ -590,6 +590,12 @@ a:hover{
 	padding-left: 20px;
 }
 
+.nuconsultas{
+	color:white;
+	margin-left: 40px;
+	font-size: 40px;
+}
+
 .Procedimentos{	
 	background-color: #32be8f;
 	height: 140px;
@@ -759,6 +765,13 @@ a:hover{
 .login h1{
 	text-align: center;
 }
+
+input#check-teste.form-check-input{
+	margin-left:20px;
+}
+
+/*fim Beneficiario*/
+
 
 
 @media only screen and (max-width: 990px){
