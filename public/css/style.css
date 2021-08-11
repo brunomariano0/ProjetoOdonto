@@ -92,17 +92,18 @@ section.main {
     margin-inline-end: 0px;
 }
 
-/*Titulo*/
+/*Titulo Planos*/
 
 .titulo{
     text-align:center;
     margin-top:35px;
+	color: #1e436f;
     
     
 }
 
-.titulo h2{
-   color: cadetblue;
+.titulo h1{
+   color: #1e436f;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font-size: 20px;
 }
@@ -772,6 +773,84 @@ input#check-teste.form-check-input{
 
 /*fim Beneficiario*/
 
+/*Inicio página quem somos*/
+
+.fm-contat{
+	text-align: center;	
+}
+
+.fm-contat h2{
+	color: #06D6A0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fm-contat p{
+	color:black;
+	font-style: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+label.ps-frm-lbl {
+    display: block;
+    font-size: 12px;
+    padding: 2px 14px 0 0;
+    height: 19px;
+    text-overflow: clip;
+}
+
+.ps-frm-entry ps-frm-valid ps-frm-cleanup{
+	position: relative;
+	transition: border-bottom .5s;
+}
+
+.ps-frm-row, .ps-row.ps-frm-row {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.ps-frm-entry, label.ps-frm-lbl+.ps-frm-entry {
+    position: left;
+    transition: border-bottom .5s;
+}
+
+label.ps-frm-lbl+.ps-frm-entry {
+    position: relative;
+    transition: border-bottom .5s;
+}
+
+.ps-frm-entry {
+	border: 0;
+	border-bottom: 1px solid #d2d2d2;
+   	line-height: 20px;
+	width:50%;
+	line-height: 19.5px;
+    padding: 10.5px 10.5px 10.5px 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a.ps-btn, button.ps-btn, input.ps-btn {
+    font-family: 'Open Sans',Sans-serif;
+    font-weight: 600;
+    width: 50%;
+    
+    cursor: pointer;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 15px;
+	background-color:  #06D6A0;
+	margin-left: 350px;
+	margin-top: -100px;
+}
+   
+    
+
+
+
 
 
 @media only screen and (max-width: 990px){
@@ -779,6 +858,8 @@ input#check-teste.form-check-input{
 		margin-bottom: 35px;
 	}
 }
+
+
 
 
 
