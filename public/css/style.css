@@ -464,12 +464,14 @@ a:hover{
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
+	height: 50px;
+	width: 40px;
   }
   
   
   .dropdown-clinic {
-	margin-top: -40px;
-	margin-left: 1363px;
+	margin-top: -50px;
+	margin-left: 1240px;
 	
 	}
   
@@ -576,7 +578,7 @@ a:hover{
 }
 
 .Consultas{
-	background-color: #32be8f;
+	background-color:#ADD8E6;
 	height: 140px;
 	width: 400px;
 	border-radius: 15px;
@@ -585,20 +587,20 @@ a:hover{
 	}
 
 .Consultas h3{
-	color: white;
+	color: rgb(0, 2, 14);
 	font-size: 18px;
 	padding-top: 20px;
 	padding-left: 20px;
 }
 
 .nuconsultas{
-	color:white;
+	color:rgb(0, 2, 14)white;
 	margin-left: 40px;
 	font-size: 40px;
 }
 
 .Procedimentos{	
-	background-color: #32be8f;
+	background-color: #ADD8E6;
 	height: 140px;
 	width: 400px;
 	border-radius: 15px;
@@ -609,7 +611,7 @@ a:hover{
 }
 
 .Procedimentos h3{
-	color: white;
+	color: rgb(0, 2, 14);
 	font-size: 18px;
 	padding-top: 20px;
 	padding-left: 20px;
@@ -617,7 +619,7 @@ a:hover{
 
 .or{
 	
-	background-color: #32be8f;
+	background-color: #ADD8E6;
 	height: 140px;
 	width: 400px;
 	border-radius: 15px;
@@ -626,7 +628,7 @@ a:hover{
 }
 
 .or h3{
-	color: white;
+	color: rgb(0, 2, 14);
 	font-size: 18px;
 	padding-top: 20px;
 	padding-left: 20px;

@@ -21,9 +21,9 @@ inputs.forEach(input => {
 
 
 var usuarios = [
-    {"login": "bcf", "senha": "bcf"},
+    {"login": "brunomariano", "senha": "220766"},
     {"login": "mamae", "senha": "abacaxi"},
-    {"login": "papai", "senha": "melancia"},
+    
 ];
 
 function Login() {
