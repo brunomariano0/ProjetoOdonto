@@ -1,9 +1,12 @@
 const express = require('express');
-let app = express();
+const app = express();
 
-app.get('/', (req, res)=>res.send("Olá mundo!"));
+const rotaProdutos = require('./routes/produtos');
+const rotaPedidos = require('./routes/pedidos');
 
 
-//criando um servidor
+app.use('/produtos', rotaProdutos);
+app.use('/pedidos', rotaPedidos);
 
-app.listen(3000, ()=>console.log("Servidor rodando na porta 3000"))
+
+module.exports = app;
