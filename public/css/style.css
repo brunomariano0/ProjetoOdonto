@@ -110,7 +110,7 @@ section.main {
 
 /*Fim do titulo*/
 
-
+/*Inicio quem somos*/
 
 .quem-somos{
     
@@ -122,9 +122,81 @@ section.main {
     min-height: 250px;
 }
 
+.sobre-empresa-texto{
+	margin-top: 45px;
+
+}
+
+.sobre-empresa-paragrafo{
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .quem-somos p {
    margin:  20px 30px 10px;
 }
+
+.sobre-empresa-texto p{	
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;	
+}
+
+.column .sobre-missao-texto-verde{
+	color:green;
+	text-align: left;
+	text:uppercase;
+	font-size: 20px;
+	font-weight: bold;	
+}
+
+.column .sobre-missao-texto-roxo{
+	text:uppercase;
+	font-size: 20px;
+	font-weight: bold;	
+	text-align: left;
+	color: #1e436f;
+}
+
+.column .sobre-missao-texto-vermelho{
+	text:uppercase;
+	font-size: 20px;
+	font-weight: bold;	
+	text-align: left;
+	color: #aa0c56;
+}
+
+.column .sobre-missao-paragrafo{
+	text-align: left;
+	color: #333;
+
+}
+.column .clinica-info{
+	margin-top: 25px;
+	height:390px;
+	width: auto;
+}
+
+.column {
+	margin-top:15px;
+	float: right;
+	width: 50%;
+  }
+
+  .column p{
+	  margin-right: 50px;
+	  text-align: right;
+  }  
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  /*fim quem somos */
 
 /*Segundo Titulo*/
 
@@ -848,6 +920,39 @@ a.ps-btn, button.ps-btn, input.ps-btn {
 	margin-left: 350px;
 	margin-top: -100px;
 }
+
+/* INICIO MINHA CONTA */
+
+.mn-minhacc{
+	text-align: right;
+	margin-right: 150px;
+	margin-top: -120px;	
+}
+
+.col-xs-12{
+	margin-top: 150px;
+	padding: 1.25em;
+    border-radius: 15px;
+    border: 1px solid #ededed;
+}
+
+.col-xs-12 span {
+	color:#009ac2;
+	font-size: 15px;	
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-left: 40px;
+	
+	
+}
+
+
+
+
+
+
+
+
    
     
 
@@ -858,6 +963,13 @@ a.ps-btn, button.ps-btn, input.ps-btn {
 @media only screen and (max-width: 990px){
 	.pricingTable{
 		margin-bottom: 35px;
+	}
+}
+
+
+@media only screen and (max-width:auto) {
+	.clinica-info, .quem-somos, .menu,.column, .sobre-missao-texto-roxo{
+		width: auto;			
 	}
 }
 
