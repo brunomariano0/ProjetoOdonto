@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/public/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="/public/img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Plano Gold</title>
+</head>
+
+<body>
+
+    <div id="fb-root">
+        </ div>
+        <script assíncrona adiar crossorigin="anonymous"
+            src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0" nonce="sPfGt5Ko"> </script>
+
+        <section class="main">
+            <div class="center">
+                <div class="menu">
+                    <div class="logo-menu">
+                        <a href="Home.html"><img class="logo" src="/public/img/logo.svg" /></a>
+                    </div>
+                    <!--logo-menu-->
+                    <div class="itens-menu">
+                        <a href="Home.html"><i class="fas fa-home"></i>HOME</a>
+                        <a href="quemsomos.html"><i class="far fa-smile-wink"></i>QUEM SOMOS</a>
+                        <a href="contato.html"><i class="far fa-envelope"></i>CONTATO</a>
+                    </div>
+
+                    <!--Botão entrar-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Entrar
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="beneficiario.html">Beneficiário do Plano</a>
+                        </div>
+                    </div>
+                    <!--fim botão entrar-->
+                </div>
+                <!--menu-->
+            </div><!-- /center -->
+        </section>
+
+
+        <section class="login-redes-socias">
+            <div class="identificacao-texto">
+                <h2>Identificação</h2>
+            </div><br>
+            <div class="escolha-social-texto">
+                <p>Escolha uma rede social ou insira seu CPF</p>
+            </div>
+    </div>
+    <div ng-show="controller.funcaoAtual === 'login'" class="ng-hide">
+
+    </div>
+    </div>
+    </div>
+    <div class="login-redes-socias">
+        <div class="row">
+            <div class="col-xs-16">
+                <button id="loginFacebook" class="btn-login-facebook">
+                    <img src="/public/img/facebook2" title="Login_Facebook" alt="" class="p-r-24"><strong>Continuar com
+                        o Facebook</strong>
+                </button>
+            </div>
+        </div>
+        <div class = "fb-login-button" data-width = "350" data-size = "large" data-button-type = "continue_with" data-layout = "arredondado" data-auto-logout-link = " true " data-use-continue-as = " false " > </div>  
+        <div class="login-redes-socias">
+            <div class="col-xs-16">
+                <button id="loginGoogle" class="btn-login-google">
+                    <img src="/images/common/Google.png" title="Login_Google" alt="" class="p-r-24"><strong>Continuar
+                        com o Google</strong>
+                </button>
+            </div>
+        </div>
+        <form name="controller.formIdentificacao" class="ng-pristine ng-valid-mask ng-invalid ng-invalid-required">
+            <div class="row mt-16">
+                <div class="col-xs-16">
+                    <input type="tel" id="cpfIdentificacao" name="cpfIdentificacao"
+                        class="form-control ng-pristine ng-untouched ng-valid-mask ng-empty ng-invalid ng-invalid-required"
+                        ui-mask="999.999.999-99" ui-mask-placeholder-char="space" ng-model="controller.cpf"
+                        ng-class="{'invalid': controller.msgs.cpfIdentificacao}" required="">
+                    <label for="cpfIdentificacao">CPF</label>
+                    <span class="form-control-validation ng-binding"></span>
+                </div>
+            </div>
+            <div class="row mt-8">
+                <div class="col-xs-16">
+                    <span class="cdu-12 fs-14-desktop fw-600 color-brand-primary">Os produtos adquiridos estarão no
+                        nome do titular dessa conta.</span>
+                </div>
+            </div>
+            <div class="botao-entrar kb-hidden mt-32-desktop">
+                <div class="row">
+                    <div class="col-xs-16">
+                        <button class="btn btn-block btn-cdu-primary btn-cdu-48 fs-16"
+                            ng-click="controller.validarUsuario()">
+                            <strong>Continuar</strong>
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-24">
+                    <div class="col-xs-16 text-center">
+                        <a href="/recuperarSenha" class="prevent-u">
+                            <span class="cdu-12 fw-600 color-support-07">Esqueceu a senha?</span>
+                        </a>                        
+                    </div>                    
+                </div>
+            </div>
+        </form><br>
+        <button class="btn_cds_bf" href="cadastrar.html">Criar conta</button> 
+    </div>
+    <div ng-show="controller.funcaoAtual === 'login'" class="fade-in ng-hide">
+    </div>
+    </section>
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: 'your-app-id',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0"
+        nonce="fvOI9feR"></script>
+
+
+
+
+
+</body>
+
+</html>
