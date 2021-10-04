@@ -30,12 +30,7 @@
     <title>Plano Gold</title>
 </head>
 
-<body>
-
-    <div id="fb-root">
-        </ div>
-        <script assíncrona adiar crossorigin="anonymous"
-            src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0" nonce="sPfGt5Ko"> </script>
+<body>  
 
         <section class="main">
             <div class="center">
@@ -72,94 +67,27 @@
                 <h2>Identificação</h2>
             </div><br>
             <div class="escolha-social-texto">
-                <p>Escolha uma rede social ou insira seu CPF</p>
+                <p>Insira seu e-mail ou CPF</p>
             </div>
     </div>
-    <div ng-show="controller.funcaoAtual === 'login'" class="ng-hide">
+        
+        <form>
+            <div class="sessecao-login-gold">
+                <label class="email-sessao-gold">Email</label><br>
+                <input type="login" id="email"/><br>
+                <label>Senha</label><br>
+                <input type="password" id="password"/>
+            </div>
+        </form><br>
+        <button class="form-entrar-gold">Entrar</button>   
+    </div><br><br>
+        <span class="text-form-ct">Não tem conta?</span> <a class="cds-text-form" href="cadastro.html">Cadastra-se</a>
+        
+        
+        </section>
+</body>
 
-    </div>
-    </div>
-    </div>
-    <div class="login-redes-socias">
-        <div class="row">
-            <div class="col-xs-16">
-                <button id="loginFacebook" class="btn-login-facebook">
-                    <img src="/public/img/facebook2" title="Login_Facebook" alt="" class="p-r-24"><strong>Continuar com
-                        o Facebook</strong>
-                </button>
-            </div>
-        </div>
-        <div class = "fb-login-button" data-width = "350" data-size = "large" data-button-type = "continue_with" data-layout = "arredondado" data-auto-logout-link = " true " data-use-continue-as = " false " > </div>  
-        <div class="login-redes-socias">
-            <div class="col-xs-16">
-                <button id="loginGoogle" class="btn-login-google">
-                    <img src="/images/common/Google.png" title="Login_Google" alt="" class="p-r-24"><strong>Continuar
-                        com o Google</strong>
-                </button>
-            </div>
-        </div>
-        <form name="controller.formIdentificacao" class="ng-pristine ng-valid-mask ng-invalid ng-invalid-required">
-            <div class="row mt-16">
-                <div class="col-xs-16">
-                    <input type="tel" id="cpfIdentificacao" name="cpfIdentificacao"
-                        class="form-control ng-pristine ng-untouched ng-valid-mask ng-empty ng-invalid ng-invalid-required"
-                        ui-mask="999.999.999-99" ui-mask-placeholder-char="space" ng-model="controller.cpf"
-                        ng-class="{'invalid': controller.msgs.cpfIdentificacao}" required="">
-                    <label for="cpfIdentificacao">CPF</label>
-                    <span class="form-control-validation ng-binding"></span>
-                </div>
-            </div>
-            <div class="row mt-8">
-                <div class="col-xs-16">
-                    <span class="cdu-12 fs-14-desktop fw-600 color-brand-primary">Os produtos adquiridos estarão no
-                        nome do titular dessa conta.</span>
-                </div>
-            </div>
-            <div class="botao-entrar kb-hidden mt-32-desktop">
-                <div class="row">
-                    <div class="col-xs-16">
-                        <button class="btn btn-block btn-cdu-primary btn-cdu-48 fs-16"
-                            ng-click="controller.validarUsuario()">
-                            <strong>Continuar</strong>
-                        </button>
-                    </div>
-                </div>
-                <div class="row mt-24">
-                    <div class="col-xs-16 text-center">
-                        <a href="/recuperarSenha" class="prevent-u">
-                            <span class="cdu-12 fw-600 color-support-07">Esqueceu a senha?</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div ng-show="controller.funcaoAtual === 'login'" class="fade-in ng-hide">
-    </div>
-    </section>
-
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: 'your-app-id',
-                autoLogAppEvents: true,
-                xfbml: true,
-                version: 'v12.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0"
-        nonce="fvOI9feR"></script>
+</html>
 
 
 
