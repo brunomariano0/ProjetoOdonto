@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 
 router.post('/cadastro', (req, res, next)=>{
-
+    
 })
 
 

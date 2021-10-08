@@ -14,7 +14,7 @@
 
 
 </head>
-<body>
+<body class="minha-conta">
     <section class="main">
         <!--logo-->
         <div class="center">
@@ -27,16 +27,45 @@
     
         <div class="mn-minhacc">
             <p>Bem-Vindo(a) Bruno</p>
-            <span>
-                <a id="CC-loginHeader-logout" data-original-title="logout"
-                 data-bind="widgetLocaleText: {attr: 'innerText', value: 'logoutLinkText'}, 
-                 click: $parent['elements']['login-registration'].handleLogout.bind($parent)" href="#">Sair</a>
-            </span>
+            
+                <a class="mm-sair-cc" href="#">Sair</a>
+            
         </div> 
-        
-        <section class="container">
-                <div class="dados-1">
+
+        <div class="container">
+            <div class="row-2">                
+                <div class="col-6">
+                    <nav class="nav flex-column nav-pills" id="shopperMenu" role="tablist">
+                        <a id="minhaConta-tab"class="list-group-item list-group-item-action nav-link active" data-toggle="pill" role="tab" aria-controls="CC-customerProfile-orderDetails-section" aria-expanded="true"> 
+                            
+                            <img class="icn-profile" src="/public/img/user.png">MINHA CONTA</a> 
+                        <a id="minhasPropostas-tab"class="list-group-item list-group-item-action nav-link" data-toggle="pill" role="tab" aria-controls="CC-customerProfile-orderDetails-section" aria-expanded="true" data-bind="click: orderListAjax">
+                            
+                            <img class="icn-profile prop"  src="/public/img/proposta-de-negocio.png">MINHAS PROPOSTAS</a> 
+                        <a id="senha-tab"  class="list-group-item list-group-item-action nav-link" data-toggle="pill" role="tab" aria-controls="CC-customerProfile-password" aria-expanded="true">
+                            
+                            <img class="icn-profile" src="/public/img/padlock.png">SENHA</a>
+                </div>
+                <div class="col-6-9">
+                   <h2>Meus detalhes</h2>
+                    <div class="name-info-cc">                       
+                            <label class="name-cc-mm" for="customerProfile">Nome</label>
+                            <div id="customerProfile-detalhes">
+                                <span text="firstName" id="customerProfile">
+                                    Bruno
+                                </span>
+                                <span text="lastName" id="customerProfile">
+                                    Paulo Mariano
+                                </span>
+
+                            </div>
+                            
                     </div>
-        </section>
+                </div>
+            </div>
+        </div> 
+         
+        
+       
 </body>
 </html>
