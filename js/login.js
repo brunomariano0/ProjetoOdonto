@@ -21,7 +21,7 @@ inputs.forEach(input => {
 
 
 var usuarios = [
-    {"login": "brunomariano", "senha": "220766"},  
+    {"usuario": "brunopmariano@outlook.com.br", "password": "220766"},  
     
 ];
 
